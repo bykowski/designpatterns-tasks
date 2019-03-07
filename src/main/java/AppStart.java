@@ -1,16 +1,12 @@
 public class AppStart {
 
     public static void main(String[] args) {
-        StringBuffer info = new StringBuffer();
-        info.append(System.lineSeparator());
-        info.append("My phone number is: ");
-        info.append(PhoneNumberInfo.number);
-        info.append(System.lineSeparator());
-        info.append("My operator is: ");
-        info.append(PhoneNumberInfo.operator);
-        info.append(System.lineSeparator());
-        info.append("My tariff is: ");
-        info.append(PhoneNumberInfo.tariff);
-        System.out.println(info);
+        RestaurantFastFood restaurantFastFood = new RestaurantFastFood();
+        restaurantFastFood.getDring().servesDrink();
+        restaurantFastFood.getMeal().servesMeal();
+
+        RestaurantVege restaurantVege = new RestaurantVege();
+        restaurantVege.getDring().servesDrink();
+        restaurantVege.getMeal().servesMeal();
     }
 }
